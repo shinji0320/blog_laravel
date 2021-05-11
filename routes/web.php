@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/archives/', function () {
+    return view('archives.index');
+});
+
+Route::get('/archives/{category}/', function ($category) {
+    return view('archives.category', ['category' => $category]);
+});
