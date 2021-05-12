@@ -24,3 +24,4 @@ Route::get('/archives/{category}/', function ($category) {
 });
 
 Route::get('/sum/{x}/{y}', 'MathController@sum');
+Route::get('/entries/', 'EntriesController@index');
