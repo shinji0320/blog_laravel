@@ -22,3 +22,5 @@ Route::get('/archives/', function () {
 Route::get('/archives/{category}/', function ($category) {
     return view('archives.category', ['category' => $category]);
 });
+
+Route::get('/sum/{x}/{y}', 'MathController@sum');
